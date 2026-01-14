@@ -1,63 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Building AI-Powered Backends with Node.js, Express, and Gemini</title>
-<meta name="description" content="Learn how to build scalable AI-powered backends with Node.js, Express, and Gemini in this practical guide by Jesus Estrada.">
-<meta property="og:title" content="Building AI-Powered Backends with Node.js, Express, and Gemini">
-<meta property="og:description" content="Practical, hands-on guide to building AI-powered backends using Node.js, Express, and Gemini by Jesus Estrada. Buy now on Amazon.">
-<meta property="og:image" content="cover-image.jpg">
-<meta property="og:url" content="https://yourusername.github.io/your-repo-name">
-<meta name="twitter:card" content="summary_large_image">
-<style>
-  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #222; }
-  header { background: #2d2d2d; color: #fff; padding: 2rem 1rem; text-align: center; }
-  .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-  .book-cover { display: block; margin: 1.5rem auto; max-width: 350px; width: 100%; }
-  .btn { background: #2d2d2d; color: #fff; padding: 1rem 2rem; text-decoration: none; font-size: 1.1rem; border-radius: 5px; display: inline-block; }
-  footer { text-align: center; margin: 2rem 0; color: #888; font-size: 0.9rem; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Building AI-Powered Backends with Node.js, Express, and Gemini</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="A practical guide to building scalable AI-powered backends using Node.js, Express, and Gemini. Written by Jesus Estrada." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Building AI-Powered Backends with Node.js, Express, and Gemini" />
+  <meta property="og:description" content="Learn how to design and build production-ready AI-powered backends with Node.js, Express, and Gemini." />
+  <meta property="og:image" content="cover-image.jpg" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://yourusername.github.io/your-repo-name/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Building AI-Powered Backends with Node.js, Express, and Gemini",
+    "author": {
+      "@type": "Person",
+      "name": "Jesus Estrada"
+    },
+    "description": "A practical guide to building scalable AI-powered backend systems using Node.js, Express, and Gemini.",
+    "image": "https://yourusername.github.io/your-repo-name/cover-image.jpg",
+    "url": "https://www.amazon.com/Building-AI-Powered-Backends-Node-js-Express-ebook/dp/B0GDPBRN99/",
+    "workExample": {
+      "@type": "Book",
+      "bookFormat": "https://schema.org/EBook",
+      "url": "https://www.amazon.com/Building-AI-Powered-Backends-Node-js-Express-ebook/dp/B0GDPBRN99/"
+    }
+  }
+  </script>
 </head>
-<body>
 
-<header>
-  <h1>Building AI-Powered Backends with Node.js, Express, and Gemini</h1>
-  <p>By Jesus Estrada</p>
-</header>
+<body class="bg-gray-50 text-gray-900">
 
-<div class="container">
-  <img src="cover-image.jpg" alt="Book Cover" class="book-cover">
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl font-bold mb-4">
+        Building AI-Powered Backends with Node.js, Express, and Gemini
+      </h1>
+      <p class="text-lg text-gray-300">
+        By Jesus Estrada
+      </p>
+    </div>
+  </header>
 
-  <h2>About the Book</h2>
-  <p>
-    Dive into a practical guide on building modern AI-powered backend systems using the industry’s most powerful tools: Node.js, Express, and Gemini. Whether you’re an experienced backend engineer or just starting out, this book teaches you to design, implement, and scale backend services that integrate with intelligent APIs and handle real-world use cases.
-  </p>
-  <p>
-    You’ll learn how to combine the flexibility of Node.js with Express’s lightweight routing, and harness Gemini’s capabilities to build services that power advanced AI applications. Step-by-step examples make complex topics accessible, and real project patterns help you apply what you learn immediately.
-  </p>
+  <!-- Main -->
+  <main class="max-w-4xl mx-auto px-6 py-12">
 
-  <div style="text-align:center; margin: 2rem 0;">
-    <a href="https://www.amazon.com/Building-AI-Powered-Backends-Node-js-Express-ebook/dp/B0GDPBRN99/" class="btn" target="_blank">Buy on Amazon</a>
-  </div>
+    <!-- Cover -->
+    <div class="flex justify-center mb-10">
+      <img
+        src="cover-image.jpg"
+        alt="Building AI-Powered Backends with Node.js, Express, and Gemini book cover"
+        class="rounded-lg shadow-lg max-w-xs"
+      />
+    </div>
 
-  <h3>What You’ll Learn</h3>
-  <ul>
-    <li>Architect scalable Node.js backend systems</li>
-    <li>Integrate Express.js for efficient routing and middleware</li>
-    <li>Use Gemini to enhance backends with powerful AI features</li>
-    <li>Deploy and maintain production-ready AI services</li>
-  </ul>
+    <!-- About -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">About the Book</h2>
+      <p class="mb-4">
+        This book is a hands-on guide to building modern AI-powered backend systems using Node.js, Express, and Gemini.
+        It focuses on real-world architecture, practical integrations, and production-ready patterns.
+      </p>
+      <p>
+        Whether you are extending existing APIs or designing new services from scratch, you will learn how to
+        combine JavaScript backends with powerful AI capabilities in a clean and scalable way.
+      </p>
+    </section>
 
-  <h3>Who This Book Is For</h3>
-  <p>
-    Backend developers, software engineers, and anyone interested in building AI-enabled systems with JavaScript will find this book packed with actionable insights and real code you can use today.
-  </p>
-</div>
+    <!-- CTA -->
+    <div class="text-center my-12">
+      <a
+        href="https://www.amazon.com/Building-AI-Powered-Backends-Node-js-Express-ebook/dp/B0GDPBRN99/"
+        target="_blank"
+        class="inline-block bg-gray-900 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-800 transition"
+      >
+        Buy on Amazon
+      </a>
+    </div>
 
-<footer>
-  <p>© 2026 Jesus Estrada</p>
-</footer>
+    <!-- Learnings -->
+    <section class="mb-10">
+      <h3 class="text-xl font-semibold mb-4">What You Will Learn</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Design scalable Node.js backend architectures</li>
+        <li>Build robust APIs with Express.js</li>
+        <li>Integrate Gemini to power AI-driven features</li>
+        <li>Deploy and maintain AI-enabled backend services</li>
+      </ul>
+    </section>
+
+    <!-- Audience -->
+    <section>
+      <h3 class="text-xl font-semibold mb-4">Who This Book Is For</h3>
+      <p>
+        Backend developers, full-stack engineers, and software professionals who want to add AI capabilities
+        to their Node.js applications using proven patterns and real-world examples.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 py-8">
+    © 2026 Jesus Estrada
+  </footer>
 
 </body>
 </html>
